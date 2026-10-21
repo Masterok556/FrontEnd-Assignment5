@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <p class="subtitle">JAVASCRIPT PROJECT</p>
+        <h1>My To-Do List</h1>
+        <p>Organize your tasks and stay productive.</p>
+    </header>
+
+    <main class="main-container">
+
+        <section class="list-part">
+            <h2>Your Tasks</h2>
+
+            <div class="tasks"></div>
+        </section>
+
+        <section class="input-part">
+            <h2>Add New Task</h2>
+            <p class="form-description">
+                Create a new task for your list.
+            </p>
+
+            <div class="field">
+                <label for="title">Title</label>
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter task title..."
+                >
+            </div>
+
+            <div class="field">
+                <label for="description">Description</label>
+                <textarea
+                    id="description"
+                    rows="5"
+                    placeholder="Describe your task..."
+                ></textarea>
+            </div>
+
+            <button id="add" type="button">
+                + Add Task
+            </button>
+        </section>
+
+    </main>
+
+</body>
+</html>
