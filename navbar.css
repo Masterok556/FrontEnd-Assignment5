@@ -1,0 +1,39 @@
+.page-navbar {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1050px;
+    margin: 0 auto 30px;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #e1e5ee;
+    border-radius: 12px;
+}
+
+.page-navbar a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #475569;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.page-navbar a:hover {
+    background-color: #eeecff;
+    color: #4439bb;
+}
+
+.page-navbar a[aria-current="page"] {
+    background-color: #5b50db;
+    color: white;
+}
+
+.page-navbar a:focus-visible {
+    outline: 2px solid #4439bb;
+    outline-offset: 3px;
+}
