@@ -1,0 +1,34 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+.container {
+    max-width: 650px;
+    margin: 50px auto;
+}
+
+h1 {
+    color: #333;
+}
+
+.message {
+    background-color: white;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.message h2 {
+    color: #27834b;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
