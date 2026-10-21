@@ -1,0 +1,157 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 50px 20px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f5f7fb);
+    color: #253047;
+}
+
+.main-container {
+    max-width: 950px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+.box,
+.input,
+.calculator {
+    background-color: white;
+    border: 1px solid #e1e5ee;
+    border-radius: 16px;
+    padding: 30px;
+    min-height: 220px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.box::before {
+    content: "TASK 5 - MOUSE EVENTS";
+}
+
+.input::before {
+    content: "TASK 6 - KEYBOARD EVENTS";
+}
+
+.calculator::before {
+    content: "TASK 7 - CALCULATOR";
+}
+
+.box::before,
+.input::before,
+.calculator::before {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #7c70df;
+    margin-bottom: 25px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.box p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.box:hover {
+    color: white;
+}
+
+.box:hover::before {
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d6dbea;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    background-color: #f8f9fc;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #635bdb;
+    background-color: white;
+}
+
+#result,
+#output {
+    background-color: #f3f4fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    min-height: 50px;
+    overflow-wrap: anywhere;
+}
+
+#result:empty::before {
+    content: "Your text will appear here...";
+    color: #999eaf;
+}
+
+.calculator {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 15px;
+    align-items: start;
+}
+
+.calculator::before {
+    grid-column: 1 / -1;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 13px 24px;
+    background-color: #5b50db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #4439bb;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#output {
+    grid-column: 1 / -1;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#output:empty::before {
+    content: "The result will appear here...";
+    color: #999eaf;
+    font-size: 15px;
+    font-weight: normal;
+}

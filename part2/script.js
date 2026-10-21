@@ -20,7 +20,7 @@ textButton.addEventListener("click", function(){
 let container2 = document.querySelector(".color-container")
 let colorButton = container2.querySelector("button")
 colorButton.addEventListener("click", function(){
-    container2.style.backgroundColor ="blue"
+    container2.style.backgroundColor ="#a5b4fc"
 })
 
 
